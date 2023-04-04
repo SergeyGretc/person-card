@@ -7,10 +7,12 @@ import Create from "./pages/create";
 
 export const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/edit" element={<Edit />} />
-      <Route path="/create" element={<Create />} />
-    </Routes>
+    <div className="container">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/edit" element={<Edit />} />
+        <Route path="/create" element={<Create />} />
+      </Routes>
+    </div>
   );
 };

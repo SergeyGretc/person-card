@@ -51,7 +51,6 @@ const Create = () => {
       login: { message: "Введите данные корректно" },
     },
   };
-  console.log(errors);
   return (
     <div>
       <h2>Редактор профиля</h2>
@@ -89,7 +88,9 @@ const Create = () => {
           onChange={handleChange}
           error={errors}
         />
-
+        <button className="btn btn-primary" type="submit">
+          На главную
+        </button>
         <button
           className="btn btn-primary"
           type="submit"
